@@ -68,7 +68,7 @@ p10
 - Rmotor ------ 
 (em passo/rev)
 Exemplo:
-R1600
+m1600
 
 - Tipo de Junta ------
 t[valor]
