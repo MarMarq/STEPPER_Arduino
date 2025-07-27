@@ -8,7 +8,7 @@ dirPin 		pinoa 	5 // Direção eixo X
 --------------------------------------------------------------------
 COMANDOS:
 
-"LISTAR"
+"LISTAR" -------------
 
 SINTAXE: list 
 
@@ -29,9 +29,68 @@ tipoJunta = O Tipo de junta empregada, sendo os tipos;
 		Passo = Passo da correia [mm]
 
 
-"EXECUTAR"
+"EXECUTAR" -------------
 
 SINTAXE: run 
 
 Função: Executa o movimento configurado
+
+"ALTERAR:" -------------
+
+- Aceleração ------
+
+a[valor]
+Exemplo: a250
+
+- Velocidade ------
+v[valor]
+Exemplo: v125
+
+- DELTA_S ------
+d[valor]
+Exemplo:
+d500
+
+- Sentido ------
+s[valor]
+0 --> Sentido Anti-Horário
+1 --> Sentido Horário
+
+Exemplos:
+s0
+s1
+
+- Passo  ------
+(fuso e correia em milimetros)
+Exemplo:
+p10
+
+- Rmotor ------ 
+(em passo/rev)
+Exemplo:
+R1600
+
+- Tipo de Junta ------
+t[valor]
+
+	0: Fuso + Motor
+		Passo = Passo do Fuso [mm/rev]
+	1: Pinhão + Cremalheira (Não Implementado!!) 
+    2: Polia Sincronizada 
+
+		Z = Num. de Dente da polia sincronizada
+		Passo = Passo da correia [mm]
+Exemplos:
+t0
+t1 (Não Implementado)
+t2
+
+- Número de Dentes ------
+z[valor]
+Exemplo:
+z10
+
+
+
+
 
