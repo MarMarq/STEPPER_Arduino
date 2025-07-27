@@ -44,7 +44,7 @@ float DELTA_S_cte;
 if (V_Calc > Vf)
 {
   V_cte = true; // Ultrapassa Vf --> Gráfico V/T com 3 trechos
-  Serial.println("--> 3 trechos");
+  Serial.println("--> TRÊS trechos");
    DELTA_ta = (float)Vf / (float)ac;
    DELTA_Sa = (float)Vf * DELTA_ta / 2.0;
    DELTA_S_cte = DELTA_S - (2 * DELTA_Sa);
@@ -155,6 +155,8 @@ if (recebido.startsWith("v"))
     {
       dado = recebido.substring(1);
       Vf = dado.toFloat();
+      Serial.print("\n--------------\nConfiguração Atualizada: Veloc.final"); 
+      Listar();
     }
  
 // --- Seta ACELERACAO --------------------
@@ -162,6 +164,8 @@ if (recebido.startsWith("a"))
     {
       dado = recebido.substring(1);
       ac = dado.toFloat();
+      Serial.print("\n--------------\nConfiguração Atualizada: Aceleração"); 
+      Listar();
     }
  
 // --- Seta DESLOCAMENTO ------------------
@@ -169,6 +173,8 @@ if (recebido.startsWith("d"))
     {
       dado = recebido.substring(1);
       DELTA_S = dado.toFloat();
+      Serial.print("\n--------------\nConfiguração Atualizada: DELTA_S"); 
+      Listar();
     }
  
 // --- Seta Passo -------------------------
@@ -176,6 +182,8 @@ if (recebido.startsWith("p"))
     {
       dado = recebido.substring(1);
       Passo = dado.toFloat();
+      Serial.print("\n--------------\nConfiguração Atualizada: Passo"); 
+      Listar();
     }
  
 // --- Seta Rmotor ------------------------
@@ -183,6 +191,8 @@ if (recebido.startsWith("m"))
     {
       dado = recebido.substring(1);
       Rmotor = dado.toFloat();
+      Serial.print("\n--------------\nConfiguração Atualizada: Rmotor"); 
+      Listar();
     }
   
 // --- Seta Sentido Rotacao ---------------
@@ -190,12 +200,16 @@ if (recebido.startsWith("s"))
     {
       dado = recebido.substring(1);
       sentido = dado.toInt();
+      Serial.print("\n--------------\nConfiguração Atualizada: Sentido Rotação"); 
+      Listar();
     }
 // --- Seta Tipo de Junta -----------------
 if (recebido.startsWith("t"))
     {
       dado = recebido.substring(1);
       tipoJunta = dado.toInt();
+      Serial.print("\n--------------\nConfiguração Atualizada: Tipo Junta"); 
+      Listar();
     }
   
 // --- Seta Núm. de Dentes ----------------
@@ -203,6 +217,8 @@ if (recebido.startsWith("z"))
     {
       dado = recebido.substring(1);
       NDentes = dado.toInt();
+      Serial.print("\n--------------\nConfiguração Atualizada: Núm.Dentes"); 
+      Listar();
     }
   
 //------------------------------------------
@@ -210,13 +226,25 @@ if (recebido.startsWith("z"))
 check.toLowerCase();
     if (check == "run")
     {
+      Serial.print("\n--------------\nExecutando"); 
+      Listar();
     move_Eixo(tipoJunta, sentido, Vf, ac, DELTA_S , Rmotor, Passo, NDentes);
     }  
 
     if (check == "list")
-    {
+      Listar();
 
-      Serial.print("\n\n\nVf = "); Serial.println(Vf);
+
+delay(500);
+ 
+}
+
+
+
+void Listar(void)
+{
+
+      Serial.print("\n--------------\nVf = "); Serial.println(Vf);
       Serial.print("Ac = "); Serial.println(ac);
       Serial.print("DELTA_S = "); Serial.println(DELTA_S);
       Serial.print("Rmotor = "); Serial.println(Rmotor);
@@ -238,9 +266,4 @@ check.toLowerCase();
         tipoJunta = 0;
       }
       Serial.print("Passo = "); Serial.println(Passo);
-    }  
-
-
-delay(500);
- 
-}
+    }
