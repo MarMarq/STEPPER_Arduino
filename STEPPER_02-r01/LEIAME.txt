@@ -1,3 +1,11 @@
+Programa que aciona um motor de passos no pinos abaixo stepPin (CLOCK) e dirPin (DIREÇÃO) em rampa configurada conforme os comandos a seguir.
+
+--------------------------------------------------------------------
+PINOS:
+stepPin 	pino	2 // Passo eixo X
+dirPin 		pinoa 	5 // Direção eixo X
+
+--------------------------------------------------------------------
 COMANDOS:
 
 "LISTAR"
