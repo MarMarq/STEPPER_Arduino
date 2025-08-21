@@ -1,6 +1,5 @@
 // Controle de motor - CNC Shield
-// Versão 02 - Revisão 01 - Introduzido em 20/08/2025 - TESTE!!!
-// Novo comentário - Alterado!!
+// Versão 02 - Revisão 01
 // Definição dos pinos 
 #define stepPin 2 //Passo eixo X
 int dirPin = 5; // Direção eixo X
