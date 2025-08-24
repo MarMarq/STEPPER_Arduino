@@ -25,8 +25,15 @@
 var NAVTREE =
 [
   [ "STEPPER_02-r01", "index.html", [
+    [ "Controle de motor - CNC Shield", "index.html", "index" ],
     [ "Arquivos", "files.html", [
-      [ "Lista de Arquivos", "files.html", "files_dup" ]
+      [ "Lista de Arquivos", "files.html", "files_dup" ],
+      [ "Membros dos Arquivos", "globals.html", [
+        [ "Todos", "globals.html", null ],
+        [ "Funções", "globals_func.html", null ],
+        [ "Variáveis", "globals_vars.html", null ],
+        [ "Definições e Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

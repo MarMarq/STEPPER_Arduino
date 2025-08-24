@@ -91,6 +91,461 @@ $(function(){initNavTree('_s_t_e_p_p_e_r__02-r01_8ino.html','',''); });
   <div class="headertitle"><div class="title">Referência do Arquivo STEPPER_02-r01.ino</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para STEPPER_02-r01.ino:</div>
+<div class="dyncontent">
+<div class="center"><img src="_s_t_e_p_p_e_r__02-r01_8ino__incl.png" border="0" usemap="#a_s_t_e_p_p_e_r__02-r01_8ino" loading="lazy" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a81d7b528b321b301a71d2eed09b638a0" id="r_a81d7b528b321b301a71d2eed09b638a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d7b528b321b301a71d2eed09b638a0">stepPin</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a81d7b528b321b301a71d2eed09b638a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pino de Clock Passo eixo X.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a40630448cc89ed9cdb59298a38ab4981" id="r_a40630448cc89ed9cdb59298a38ab4981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40630448cc89ed9cdb59298a38ab4981">move_Eixo</a> (int tipoJ, int <a class="el" href="#a637d5b598b9bb27643f8f0a21b3b0191">sentido</a>, float <a class="el" href="#a047095230f9ab47c8a8366ae3a6af4c9">Vf</a>, float <a class="el" href="#ac93d6ff5f2efa6e9356335875bdf6803">ac</a>, float <a class="el" href="#a6f594e95ca03032706653a4d596c4d0a">DELTA_S</a>, unsigned int <a class="el" href="#a7e53d2feea616ac770df4c80cfff385f">Rmotor</a>, float <a class="el" href="#af137ebca0fd1ab6e8ac1b48bc0151c77">Passo</a>, unsigned int Z)</td></tr>
+<tr class="memdesc:a40630448cc89ed9cdb59298a38ab4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move o motor do eixo com base em parâmetros de aceleração e velocidade.  <br /></td></tr>
+<tr class="memitem:acaff3882e60d8ff523be4f33598352d6" id="r_acaff3882e60d8ff523be4f33598352d6"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acaff3882e60d8ff523be4f33598352d6">leStringSerial</a> ()</td></tr>
+<tr class="memdesc:acaff3882e60d8ff523be4f33598352d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que lê uma string da Serial Caracter por caraceter (tipo char), concatenando-os e retorna uma string (tipo String)  <br /></td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d" id="r_a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função de configuração Definições.  <br /></td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f" id="r_afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função Principal.  <br /></td></tr>
+<tr class="memitem:acb00b0eeea01708eddac6f2fed3eded4" id="r_acb00b0eeea01708eddac6f2fed3eded4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb00b0eeea01708eddac6f2fed3eded4">Listar</a> (void)</td></tr>
+<tr class="memdesc:acb00b0eeea01708eddac6f2fed3eded4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função utilizada para listagem das configurações.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a880a7bdebc605b6999d6c2d91ebace30" id="r_a880a7bdebc605b6999d6c2d91ebace30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a880a7bdebc605b6999d6c2d91ebace30">dirPin</a> = 5</td></tr>
+<tr class="memdesc:a880a7bdebc605b6999d6c2d91ebace30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pino de Direção Direção eixo X.  <br /></td></tr>
+<tr class="memitem:a047095230f9ab47c8a8366ae3a6af4c9" id="r_a047095230f9ab47c8a8366ae3a6af4c9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a047095230f9ab47c8a8366ae3a6af4c9">Vf</a> = 150</td></tr>
+<tr class="memdesc:a047095230f9ab47c8a8366ae3a6af4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocidade Final em mm/s - Padrão = 150 mm/s.  <br /></td></tr>
+<tr class="memitem:ac93d6ff5f2efa6e9356335875bdf6803" id="r_ac93d6ff5f2efa6e9356335875bdf6803"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac93d6ff5f2efa6e9356335875bdf6803">ac</a> = 1500</td></tr>
+<tr class="memdesc:ac93d6ff5f2efa6e9356335875bdf6803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aceleração em mm/s^2 (igual na Frenagem) - Padrão = 1500 mm/s^2.  <br /></td></tr>
+<tr class="memitem:a7e53d2feea616ac770df4c80cfff385f" id="r_a7e53d2feea616ac770df4c80cfff385f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e53d2feea616ac770df4c80cfff385f">Rmotor</a> = 800</td></tr>
+<tr class="memdesc:a7e53d2feea616ac770df4c80cfff385f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolução de Trabalho do motor de passos em Passos/Revolução.  <br /></td></tr>
+<tr class="memitem:aaa1f7dd0884de1194c5e33a206bf5fda" id="r_aaa1f7dd0884de1194c5e33a206bf5fda"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa1f7dd0884de1194c5e33a206bf5fda">NDentes</a> = 20</td></tr>
+<tr class="memdesc:aaa1f7dd0884de1194c5e33a206bf5fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de dentes tanto para Engrenagem + Cremalheira quanto para Polias Sincronizadas.  <br /></td></tr>
+<tr class="memitem:a637d5b598b9bb27643f8f0a21b3b0191" id="r_a637d5b598b9bb27643f8f0a21b3b0191"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a637d5b598b9bb27643f8f0a21b3b0191">sentido</a> = 0</td></tr>
+<tr class="memdesc:a637d5b598b9bb27643f8f0a21b3b0191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona o Sentido de Rotação do Motor de Passos. As entradas possíveis são mostrados abaixo:  <br /></td></tr>
+<tr class="memitem:a1748dc98aa94dd5a7b08243bdd264665" id="r_a1748dc98aa94dd5a7b08243bdd264665"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1748dc98aa94dd5a7b08243bdd264665">tipoJunta</a> = 0</td></tr>
+<tr class="memdesc:a1748dc98aa94dd5a7b08243bdd264665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona o Tipo de Junta a ser utilizada. As entradas possíveis são mostrados abaixo:  <br /></td></tr>
+<tr class="memitem:af137ebca0fd1ab6e8ac1b48bc0151c77" id="r_af137ebca0fd1ab6e8ac1b48bc0151c77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af137ebca0fd1ab6e8ac1b48bc0151c77">Passo</a> = 10</td></tr>
+<tr class="memdesc:af137ebca0fd1ab6e8ac1b48bc0151c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passo do Fuso em mm/revolução.  <br /></td></tr>
+<tr class="memitem:a6f594e95ca03032706653a4d596c4d0a" id="r_a6f594e95ca03032706653a4d596c4d0a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f594e95ca03032706653a4d596c4d0a">DELTA_S</a> = 200</td></tr>
+<tr class="memdesc:a6f594e95ca03032706653a4d596c4d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deslocamento Total em mm.  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Definições e macros</h2>
+<a id="a81d7b528b321b301a71d2eed09b638a0" name="a81d7b528b321b301a71d2eed09b638a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d7b528b321b301a71d2eed09b638a0">&#9670;&#160;</a></span>stepPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define stepPin&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pino de Clock Passo eixo X. </p>
+<ul>
+<li></li>
+</ul>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="acaff3882e60d8ff523be4f33598352d6" name="acaff3882e60d8ff523be4f33598352d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaff3882e60d8ff523be4f33598352d6">&#9670;&#160;</a></span>leStringSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String leStringSerial </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que lê uma string da Serial Caracter por caraceter (tipo char), concatenando-os e retorna uma string (tipo String) </p>
+
+</div>
+</div>
+<a id="acb00b0eeea01708eddac6f2fed3eded4" name="acb00b0eeea01708eddac6f2fed3eded4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb00b0eeea01708eddac6f2fed3eded4">&#9670;&#160;</a></span>Listar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Listar </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função utilizada para listagem das configurações. </p>
+<ul>
+<li><p class="startli">"LISTAR:" </p><pre class="fragment"> SINTAXE: list 
+</pre><p class="startli">Função: Apresenta um lista dos parâmetros para a execução do movimento, são eles:</p>
+<p class="startli"><b>Vf</b> = Velocidade Final/Máxima [mm/s]</p>
+<p class="startli"><b>Ac</b> = Aceleração [mm/s²]</p>
+<p class="startli"><b>DELTA_S</b> = O deslocamento total do movimento [mm]</p>
+<p class="startli"><b>Rmotor</b> = A resolução do motor de passos configurada [passos/rev]</p>
+<p class="startli"><b>Sentido</b> = Horário/Anti-horário</p>
+<p class="startli"><b>tipoJunta</b> = O Tipo de junta empregada, sendo os tipos;</p><ul>
+<li>0: Fuso + Motor<ul>
+<li>Passo = Passo do Fuso [mm/rev]</li>
+</ul>
+</li>
+<li>1: Pinhão + Cremalheira (Não Implementado!!)</li>
+<li>2: Polia Sincronizada<ul>
+<li>Z = Num. de Dente da polia sincronizada</li>
+<li>Passo = Passo da correia [mm]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>"EXECUTAR:" Executa o movimento configurado <pre class="fragment"> SINTAXE: run 
+</pre></li>
+</ul>
+<ul>
+<li>"ALTERAR:"<ul>
+<li><p class="startli">"ACELERACAO:" Altera o valor da Aceleração</p>
+<p class="startli">SINTAXE: a[valor]</p>
+<p class="startli">Exemplo: a250</p>
+</li>
+<li><p class="startli">"VELOCIDADE:" Altera o valor da Velocidade</p>
+<p class="startli">SINTAXE: v[valor]</p>
+<p class="startli">Exemplo: v125</p>
+</li>
+<li><p class="startli">"DESLOCAMENTO:" Altera o valor do DELTA_S</p>
+<p class="startli">SINTAXE: d[valor]</p>
+<p class="startli">Exemplo: d500</p>
+</li>
+<li><p class="startli">"SENTIDO:" Altera o sentido de rotação do motor</p>
+<p class="startli">SINTAXE: s[valor]</p><ul>
+<li>0 --&gt; Sentido Anti-Horário</li>
+<li>1 --&gt; Sentido Horário</li>
+</ul>
+<p class="startli">Exemplos:</p>
+<p class="startli">s0</p>
+<p class="startli">s1</p>
+</li>
+<li><p class="startli">"PASSO:" Altera o passo do fuso ou correia</p>
+<p class="startli">SINTAXE: p[valor]</p>
+<p class="startli">(fuso e correia em milimetros)</p>
+<p class="startli">Exemplo: p10</p>
+</li>
+<li><p class="startli">"RMOTOR:" Altera a Resolução do Motor de Passo</p>
+<p class="startli">SINTAXE: m[valor]</p>
+<p class="startli">(em passo/rev)</p>
+<p class="startli">Exemplo: m1600</p>
+</li>
+<li><p class="startli">"TIPOJUNTA:" Altera 0 Tipo de Junta ---&mdash;</p>
+<p class="startli">SINTAXE: t[valor]</p><ul>
+<li>0: Fuso + Motor (Passo = Passo do Fuso [mm/rev])</li>
+<li>1: Pinhão + Cremalheira (Não Implementado!!)</li>
+<li><p class="startli">2: Polia Sincronizada</p>
+<p class="startli">Z = Num. de Dente da polia sincronizada Passo = Passo da correia [mm]</p>
+</li>
+</ul>
+<p class="startli">Exemplos:</p>
+<p class="startli">t0</p>
+<p class="startli">t1 (Não Implementado)</p>
+<p class="startli">t2</p>
+</li>
+<li><p class="startli">"NUMDENTES:" Altera o Número de Dentes ---&mdash;</p>
+<p class="startli">SINTAXE: z[valor]</p>
+<p class="startli">Exemplo: z10 </p>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função Principal. </p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="_s_t_e_p_p_e_r__02-r01_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.png" border="0" usemap="#a_s_t_e_p_p_e_r__02-r01_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph" loading="lazy" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a40630448cc89ed9cdb59298a38ab4981" name="a40630448cc89ed9cdb59298a38ab4981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40630448cc89ed9cdb59298a38ab4981">&#9670;&#160;</a></span>move_Eixo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void move_Eixo </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tipoJ</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sentido</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Vf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ac</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>DELTA_S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>Rmotor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Passo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>Z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move o motor do eixo com base em parâmetros de aceleração e velocidade. </p>
+<p>Esta função calcula o movimento do motor, incluindo fases de aceleração, velocidade constante e desaceleração, com base nos parâmetros de entrada. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tipoJ</td><td>Tipo de junta (0: Fuso+Porca, 1: Pinhão+Cremalheira, 2: Polia+Correia). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sentido</td><td>Direção da rotação (0: Anti-horário, 1: Horário). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Vf</td><td>Velocidade final do motor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ac</td><td>Aceleração do motor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">DELTA_S</td><td>Deslocamento desejado. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Rmotor</td><td>Resolução do motor em passos/revolução. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Passo</td><td>Passo do fuso/cremalheira/polia. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Z</td><td>Número de dentes (para polia e pinhão). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função de configuração Definições. </p>
+<ul>
+<li>Pino de CLK</li>
+<li>Pino de DIR</li>
+<li>Inicia a Seria em 9600 bps </li>
+</ul>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="ac93d6ff5f2efa6e9356335875bdf6803" name="ac93d6ff5f2efa6e9356335875bdf6803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93d6ff5f2efa6e9356335875bdf6803">&#9670;&#160;</a></span>ac</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ac = 1500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aceleração em mm/s^2 (igual na Frenagem) - Padrão = 1500 mm/s^2. </p>
+
+</div>
+</div>
+<a id="a6f594e95ca03032706653a4d596c4d0a" name="a6f594e95ca03032706653a4d596c4d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f594e95ca03032706653a4d596c4d0a">&#9670;&#160;</a></span>DELTA_S</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DELTA_S = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deslocamento Total em mm. </p>
+
+</div>
+</div>
+<a id="a880a7bdebc605b6999d6c2d91ebace30" name="a880a7bdebc605b6999d6c2d91ebace30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880a7bdebc605b6999d6c2d91ebace30">&#9670;&#160;</a></span>dirPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dirPin = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pino de Direção Direção eixo X. </p>
+<ul>
+<li></li>
+</ul>
+
+</div>
+</div>
+<a id="aaa1f7dd0884de1194c5e33a206bf5fda" name="aaa1f7dd0884de1194c5e33a206bf5fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1f7dd0884de1194c5e33a206bf5fda">&#9670;&#160;</a></span>NDentes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NDentes = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de dentes tanto para Engrenagem + Cremalheira quanto para Polias Sincronizadas. </p>
+
+</div>
+</div>
+<a id="af137ebca0fd1ab6e8ac1b48bc0151c77" name="af137ebca0fd1ab6e8ac1b48bc0151c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af137ebca0fd1ab6e8ac1b48bc0151c77">&#9670;&#160;</a></span>Passo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Passo = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Passo do Fuso em mm/revolução. </p>
+
+</div>
+</div>
+<a id="a7e53d2feea616ac770df4c80cfff385f" name="a7e53d2feea616ac770df4c80cfff385f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e53d2feea616ac770df4c80cfff385f">&#9670;&#160;</a></span>Rmotor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Rmotor = 800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolução de Trabalho do motor de passos em Passos/Revolução. </p>
+
+</div>
+</div>
+<a id="a637d5b598b9bb27643f8f0a21b3b0191" name="a637d5b598b9bb27643f8f0a21b3b0191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637d5b598b9bb27643f8f0a21b3b0191">&#9670;&#160;</a></span>sentido</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sentido = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seleciona o Sentido de Rotação do Motor de Passos. As entradas possíveis são mostrados abaixo: </p>
+<ul>
+<li>sentido = 0 --&gt; Anti-horário</li>
+<li>sentido = 1 --&gt; Horário <dl class="section attention"><dt>Atenção</dt><dd>OBS.: Outros valores serão ignorados. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a1748dc98aa94dd5a7b08243bdd264665" name="a1748dc98aa94dd5a7b08243bdd264665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1748dc98aa94dd5a7b08243bdd264665">&#9670;&#160;</a></span>tipoJunta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tipoJunta = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seleciona o Tipo de Junta a ser utilizada. As entradas possíveis são mostrados abaixo: </p>
+<ul>
+<li>tipojunta = 0 --&gt; Fuso + Porca</li>
+<li>tipojunta = 1 --&gt; Pinhão + Cremalheira (Não implementado!!)</li>
+<li>tipojunta = 2 --&gt; Polia + Correia Dentada <dl class="section attention"><dt>Atenção</dt><dd>OBS.: Outros valores serão ignorados. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a047095230f9ab47c8a8366ae3a6af4c9" name="a047095230f9ab47c8a8366ae3a6af4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047095230f9ab47c8a8366ae3a6af4c9">&#9670;&#160;</a></span>Vf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Vf = 150</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Velocidade Final em mm/s - Padrão = 150 mm/s. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
