@@ -1,8 +1,9 @@
-// Controle de motor - CNC Shield
-// Versão 02 - Revisão 01
-// Definição dos pinos 
-#define stepPin 2 //Passo eixo X
-int dirPin = 5; // Direção eixo X
+/* 
+Controle de motor - CNC Shield
+Versão 02 - Revisão 01
+Definição dos pinos */
+#define stepPin 2 /* Passo eixo X */
+int dirPin = 5;   /* Direção eixo X */
 
 unsigned int Vf = 150;
 unsigned int ac = 1500;
@@ -10,8 +11,11 @@ unsigned int Rmotor = 800;
 unsigned int NDentes = 20;
 // ------------------------------
 int sentido = 0;
-// 0 --> Anti-horário
-// 1 --> Horário
+/*
+@param sentido
+ 0 --> Anti-horário
+ 1 --> Horário
+*/
 // ------------------------------
 int tipoJunta = 0;
 // 0 --> Fuso + Porca 
